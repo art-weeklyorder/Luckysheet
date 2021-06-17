@@ -9193,8 +9193,8 @@ export default {
     fontFamily:{
         MicrosoftYaHei:"YaHei",
     },
-    fontarray: ["Times New Roman","Arial","Tahoma","Verdana"],
-    fontjson: {"times new roman":0,"arial":1,"tahoma":2,"verdana":3},
+    fontarray: ["Arial","Times New Roman","Tahoma","Verdana"],
+    fontjson: {"arial":0,"times new roman":1,"tahoma":2,"verdana":3},
     border:{
         borderTop:'borderTop',
         borderBottom:'borderBottom',
