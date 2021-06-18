@@ -231,13 +231,7 @@ const menuButton = {
         $("#luckysheet-icon-currency").click(function(){
             let d = editor.deepCopyFlowData(Store.flowdata);//取数据
 
-            // _this.updateFormat(d, "ct", "¥ #.00");
-            _this.updateFormat(d, "ct", "$#.00");
-        });
-        $("#luckysheet-icon-currency-eur").click(function(){
-            let d = editor.deepCopyFlowData(Store.flowdata);//取数据
-
-            _this.updateFormat(d, "ct", "€#.00");
+            _this.updateFormat(d, "ct", "$ #.00");
         });
 
         //百分比
@@ -808,7 +802,8 @@ const menuButton = {
                     alternateformat.perfect();
                 });
 
-                $("#" + menuButtonId).find(".luckysheet-color-selected").val("#fff");
+                $("#" + menuButtonId).find(".luckysheet-color-selected").val("#f00");
+                $("#" + menuButtonId).find(".luckysheet-color-selected").spectrum("set", "#f00");
             }
 
             let userlen = $(this).outerWidth();
@@ -826,6 +821,9 @@ const menuButton = {
                 mouseclickposition($menuButton, menuleft - 28, offsetTop, "lefttop");
             }, 1);
         });
+        // let $input = $("#luckysheet-icon-cell-color-menu-menuButton").find(".luckysheet-color-selected");
+        // $input.val("#f00");
+        // $input.spectrum("set", "#f00");
 
 
         //字体大小
