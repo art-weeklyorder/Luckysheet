@@ -2206,7 +2206,6 @@ export function luckysheetcolsdbclick() {
     if(dataset_row_ed>=d.length){
         dataset_row_ed = d.length-1;
     }
-    console.log('luckysheetcolsdbclick', Store.luckysheet_select_save)
     for(let s = 0; s < Store.luckysheet_select_save.length; s++){
         let c1 = Store.luckysheet_select_save[s].column[0], 
             c2 = Store.luckysheet_select_save[s].column[1];
@@ -2340,11 +2339,6 @@ export function luckysheetcolsdbclickCustom() {
     $("#luckysheet-cols-change-size").css("opacity", 0);
     $("#luckysheet-sheettable, #luckysheet-cols-h-c, .luckysheet-cols-h-cells, .luckysheet-cols-h-cells canvas").css("cursor", "default");
 
-    // let mouse = mouseposition(event.pageX, event.pageY);
-    // console.log()
-    // let scrollLeft = $("#luckysheet-cols-h-c").scrollLeft();
-    // let x = mouse[0] + scrollLeft;
-    
     let colIndex = 0;
     let d = editor.deepCopyFlowData(Store.flowdata);
     let canvas = $("#luckysheetTableContent").get(0).getContext("2d");
@@ -2362,7 +2356,6 @@ export function luckysheetcolsdbclickCustom() {
     if(dataset_row_ed>=d.length){
         dataset_row_ed = d.length-1;
     }
-    console.log('luckysheetcolsdbclick', Store.luckysheet_select_save)
     for(let s = 0; s < Store.luckysheet_select_save.length; s++){
         let c1 = Store.luckysheet_select_save[s].column[0], 
             c2 = Store.luckysheet_select_save[s].column[1];

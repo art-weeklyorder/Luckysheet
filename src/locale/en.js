@@ -9390,7 +9390,9 @@ export default {
         byRow: 'By row',
         byCol: 'By column',
         generateNewMatrix: 'Generate new matrix',
-        
+        insertLeftColumn: 'Columns to to Left',
+        insertRightColumn: 'Columns to to Right'
+
     },
     comment:{
         "insert":"Insert",

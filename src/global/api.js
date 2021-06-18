@@ -6750,7 +6750,6 @@ export function checkTheStatusOfTheSelectedCells(type,status){
  */
 
 export function setAutoColumnWidth() {
-    console.log('setAutoColumnWidth')
     $("#luckysheet-left-top").click()
     luckysheetcolsdbclickCustom()
     cleargridelement();
