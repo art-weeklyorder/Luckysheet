@@ -41,6 +41,8 @@ import imageCtrl from '../controllers/imageCtrl';
 import dayjs from "dayjs";
 import {getRangetxt } from '../methods/get';
 import {luckysheetupdateCell} from '../controllers/updateCell';
+import {luckysheetcolsdbclickCustom} from "../controllers/rowColumnOperation";
+
 const IDCardReg = /^\d{6}(18|19|20)?\d{2}(0[1-9]|1[12])(0[1-9]|[12]\d|3[01])\d{3}(\d|X)$/i;
 
 /**
@@ -6741,4 +6743,15 @@ export function checkTheStatusOfTheSelectedCells(type,status){
     })
 
     return flag;
+}
+
+/**
+ * custom column width
+ */
+
+export function setAutoColumnWidth() {
+    console.log('setAutoColumnWidth')
+    $("#luckysheet-left-top").click()
+    luckysheetcolsdbclickCustom()
+    cleargridelement();
 }

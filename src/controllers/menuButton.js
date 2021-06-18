@@ -821,9 +821,6 @@ const menuButton = {
                 mouseclickposition($menuButton, menuleft - 28, offsetTop, "lefttop");
             }, 1);
         });
-        // let $input = $("#luckysheet-icon-cell-color-menu-menuButton").find(".luckysheet-color-selected");
-        // $input.val("#f00");
-        // $input.spectrum("set", "#f00");
 
 
         //字体大小
