@@ -6752,5 +6752,6 @@ export function checkTheStatusOfTheSelectedCells(type,status){
 export function setAutoColumnWidth() {
     $("#luckysheet-left-top").click()
     luckysheetcolsdbclickCustom()
-    cleargridelement();
+    // cleargridelement();
+    setRangeShow("A1")
 }
