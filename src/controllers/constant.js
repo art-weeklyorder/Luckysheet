@@ -342,14 +342,14 @@ function rightclickHTML(){
                         <div class="luckysheet-cols-menuitem-content luckysheet-mousedown-cancel">
                             ${_locale.button.insert}
                             <input type="text" class="luckysheet-mousedown-cancel" placeholder="${rightclick.number}" value="1" style="width:40px;height:20px;box-sizing:border-box;text-align:center;margin-left:5px;"/>
-                            <span class="luckysheet-cols-rows-shift-word luckysheet-mousedown-cancel">${rightclick.insertLeftColumn}</span>
+                            <span> Column to the Left</span>
                         </div>
                     </div>
                     <div id="luckysheet-bottom-right-add-selected" class="luckysheet-cols-menuitem luckysheet-mousedown-cancel">
                         <div class="luckysheet-cols-menuitem-content luckysheet-mousedown-cancel">
                             ${_locale.button.insert}
                             <input type="text" class="luckysheet-mousedown-cancel" placeholder="${rightclick.number}" value="1" style="width:40px;height:20px;box-sizing:border-box;text-align: center;margin-left:5px;"/>
-                            <span class="luckysheet-cols-rows-shift-word luckysheet-mousedown-cancel">${rightclick.insertRightColumn}</span>
+                            <span> Column to the Right</span>
                         </div>
                     </div>
                     <div id="luckysheet-del-selected" class="luckysheet-cols-menuitem luckysheet-mousedown-cancel">
