@@ -8827,6 +8827,21 @@ export default {
             "type": "rangeall"
         }]
     },
+    {
+        "n": "REMOTE",
+        "t": "5",
+        "d": "Calls a function on a remote server",
+        "a": "Calls a function on a remote back end server/API.",
+        "m": [1, 1],
+        "p": [{
+            "name": "remote_expression",
+            "example": 'SUM(A1:A10000000)',
+            "detail": "Formula",
+            "require": "m",
+            "repeat": "n",
+            "type": "string"
+        }]
+    },
     ],
     toolbar: {
         undo: 'Undo',
@@ -9455,7 +9470,7 @@ export default {
         "semicolon":"semicolon",
         "comma":"comma",
         "space":"space",
-        
+
     },
     findAndReplace:{
         find:"Find",
@@ -9515,7 +9530,7 @@ export default {
         locationTiplessTwoRow:"Please select at least two rows",
         locationTiplessTwoColumn:"Please select at least two columns",
         locationTipNotFindCell:"Cell not found"
-    
+
     },
     sheetconfig: {
         delete: 'Delete',
@@ -9739,6 +9754,7 @@ export default {
         selectCellRange: 'Click to select a cell range',
         selectCellRange2: 'Please select a range of cells',
         verificationCondition: 'Verification condition',
+        allowMultiSelect: "Allow multiple selection",
         dropdown: 'drop-down list',
         checkbox: 'Checkbox',
         number: 'Number',
@@ -10037,4 +10053,3 @@ export default {
         support: 'The current browser does not support WebSocket',
     }
   };
-  
