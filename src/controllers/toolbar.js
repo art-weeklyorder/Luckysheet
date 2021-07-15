@@ -890,7 +890,6 @@ export function createToolbarHtml() {
     if (JSON.stringify(showtoolbarConfig) !== '{}') {
         if(showtoolbarConfig.hasOwnProperty('undoRedo')){
             config.undo = config.redo = showtoolbarConfig.undoRedo;
-            // delete showtoolbarConfig.undoRedo;
         }
         Object.assign(config, showtoolbarConfig);
     }
