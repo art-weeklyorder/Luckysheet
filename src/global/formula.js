@@ -2117,6 +2117,9 @@ const luckysheetformula = {
     },
     functionStrChange: function (txt, type, rc, orient, stindex, step) {
         let _this = this;
+        // fix bug case cant add row :art
+        if (typeof txt !== 'string') return
+        // fix bug 
 
         if (_this.operatorjson == null) {
             let arr = _this.operator.split("|"),
