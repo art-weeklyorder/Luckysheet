@@ -37,7 +37,7 @@ const luckysheetConfigsetting = {
     defaultRowHeight:19,
 
     defaultTextColor: '#000',
-    defaultCellColor: '#f00',
+    defaultCellColor: '#000',
 }
 
 export default luckysheetConfigsetting;
