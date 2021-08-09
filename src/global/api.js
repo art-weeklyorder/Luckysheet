@@ -33,7 +33,7 @@ import conditionformat from '../controllers/conditionformat';
 import { luckysheet_searcharray } from "../controllers/sheetSearch";
 import { selectHightlightShow, selectIsOverlap } from '../controllers/select';
 import { sheetHTML, luckysheetdefaultstyle } from '../controllers/constant';
-import { createFilterOptions } from '../controllers/filter';
+import { createFilterOptions, orderbydatafiler } from '../controllers/filter';
 import controlHistory from '../controllers/controlHistory';
 import { zoomRefreshView, zoomNumberDomBind } from '../controllers/zoom';
 import dataVerificationCtrl from "../controllers/dataVerificationCtrl";
@@ -6844,4 +6844,8 @@ export function setAutoColumnWidth() {
     luckysheetcolsdbclickCustom()
     // cleargridelement();
     setRangeShow("A1")
+}
+
+export function orderByDataFilter(str, stc, edr, edc, index, asc) {
+  return orderbydatafiler(str, stc, edr, edc, index, asc)
 }
