@@ -2941,7 +2941,7 @@ export function setRangeFormat(attr, value, options = {}) {
     }
 
     let file = Store.luckysheetfile[order];
-
+    let sheetData = $.extend(true, [], file.data);
     let result = []
 
     for (let i = 0; i < range.length; i++) {
