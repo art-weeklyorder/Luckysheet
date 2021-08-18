@@ -475,7 +475,6 @@ function initialFilterHandler(){
 
         $("#luckysheet-filter-orderby-asc").off("click").on("click", function () {
             orderbydatafiler(st_r, st_c, ed_r, ed_c, cindex, true);
-            console.log('asc', st_r, st_c, ed_r, ed_c, cindex, true)
         });
 
         $("#luckysheet-filter-orderby-desc").off("click").on("click", function () {

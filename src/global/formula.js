@@ -2885,7 +2885,6 @@ const luckysheetformula = {
         _this.func_selectedrange["height_move"] = height;
 
         luckysheet_count_show(col_pre, top, col - col_pre - 1, height, rowseleted, [0, col_index]);
-        console.log('rangedrag_row', rowseleted)
         _this.rangeSetValue({
             "row": rowseleted,
             "column": [null, null]
