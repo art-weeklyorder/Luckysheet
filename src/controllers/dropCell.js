@@ -422,6 +422,11 @@ const luckysheetDropCell = {
                         else if(_this.isChnWeek3(cell["m"])){
                             hasChnWeek3 = true;
                         }
+                    } else if (getObjType(cell) == "object" && cell["v"] != null && cell["f"] !== null){
+                      // fix case calc formula with format currency 
+                      if(cell["ct"] != null && cell["ct"].t == "n"){
+                          hasNumber = true;
+                        }
                     }
                 }
             }
